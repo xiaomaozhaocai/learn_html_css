@@ -7,6 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>margin负值的巧妙运用</title>
     <style>
+        div {
+            border: 1px solid green;
+            width: 500px;
+        }
+        ul {
+            float: left;
+        }
         ul li {
             position: relative;
             float: left;
@@ -15,6 +22,7 @@
             height: 200px;
             border: 1px solid red;
             margin-left: -1px;
+            margin-top: -1px;
         }
 
         /* ul li:hover {
@@ -28,17 +36,35 @@
             z-index: 1;
             border: 1px solid blue;
         }
+
+
+        .clearfix:before,
+        .clearfix:after {
+            content: "";
+            display: table;
+        }
+
+        .clearfix:after {
+            clear: both;
+        }
+
+        .clearfix {
+            *zoom: 1;
+        }
     </style>
 </head>
 
 <body>
-    <ul>
+<div class="clearfix">
+    <ul class="clearfix">
         <li>1</li>
         <li>2</li>
         <li>3</li>
         <li>4</li>
         <li>5</li>
     </ul>
+</div>
+
 </body>
 
 </html>

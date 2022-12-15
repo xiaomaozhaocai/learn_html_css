@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: pink;
+        }
+
+        li {
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        div {
+            float: left;
+            position: relative;
+            height: 280px;
+            width: 520px;
+            margin: 50px auto;
+            overflow: hidden;
+            /*top: 100px;*/
+            /*right: 59%;*/
+            /*margin-left: -50px;*/
+        }
+
+        div ul {
+            position: absolute;
+            display: block;
+            left: 50%;
+            bottom: 10px;
+            margin-left: -35px;
+            padding: 5px;
+            background-color: rgba(246, 241, 241, 0.6);
+            border-radius: 12px 12px 12px 12px;
+            text-align: center;
+        }
+
+        div ul li {
+            float: left;
+            width: 10px;
+            height: 10px;
+            margin-right: 5px;
+            border-radius: 50%;
+            background-color: #fff;
+        }
+
+        .jihuo {
+            background-color: orangered;
+        }
+
+        div em {
+            display: block;
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(0,0,0,0.3);
+            font-size: 16px;
+            color: #fff;
+            line-height: 40px;
+            cursor: pointer;
+        }
+
+        .left {
+            left: -20px;
+            top: 50%;
+            margin-top: -20px;
+        }
+
+        .right {
+            right: -20px;
+            top: 50%;
+            margin-top: -20px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <img src="images/tb.jpg" alt="">
+    <ul>
+        <li class="jihuo"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <em class="left">&nbsp;&nbsp;&nbsp;&nbsp;&lt;</em>
+    <em class="right">&nbsp;&gt;</em>
+</div>
+</body>
+</html>
