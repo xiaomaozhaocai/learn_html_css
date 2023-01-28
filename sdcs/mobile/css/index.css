@@ -1,0 +1,141 @@
+body {
+  min-width: 320px;
+  max-width: 750px;
+  margin: 0 auto;
+  background-color: #f2f4f7;
+}
+a {
+  text-decoration: none;
+  color: #707070;
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 37.5px !important;
+  }
+}
+.wrap {
+  background-color: #fff;
+  padding-bottom: 1.146667rem;
+}
+.header {
+  height: 2.133333rem;
+  border-bottom: 1px solid #eaeaea;
+  text-align: center;
+  line-height: 2.133333rem;
+  font-size: 0.933333rem;
+  color: #1c1c1c;
+}
+.header .logo {
+  display: inline-block;
+  width: 1.333rem;
+  height: 1.333rem;
+  vertical-align: middle;
+  margin-top: -0.213rem;
+}
+.header .logo img {
+  width: 100%;
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.2rem 0 1.6rem 0;
+}
+.nav .item {
+  display: flex;
+  width: 33.33%;
+  flex-direction: column;
+  align-items: center;
+}
+.nav .item img {
+  width: 3.706667rem;
+  height: 3.706667rem;
+}
+.nav .item span {
+  font-size: 0.666667rem;
+  color: #707070;
+}
+.nav .item:nth-child(-n + 3) {
+  margin-bottom: 1.653333rem;
+}
+.go {
+  margin: 0 0.373rem;
+}
+.go img {
+  width: 100%;
+}
+.content {
+  padding: 1.066667rem 0.64rem;
+  background-color: #fff;
+  margin-top: 0.2666667rem;
+}
+.content .con-hd {
+  display: flex;
+  justify-content: space-between;
+  height: 1.013333rem;
+  line-height: 1.013333rem;
+  margin-bottom: 1rem;
+}
+.content .con-hd h4 {
+  margin: 0;
+  font-size: 0.746667rem;
+  color: #333;
+}
+.content .con-hd h4 .icon {
+  display: inline-block;
+  margin-right: 0.133rem;
+  margin-top: -0.083rem;
+  width: 1.213rem;
+  height: 1.213rem;
+  vertical-align: middle;
+}
+.content .con-hd h4 .icon img {
+  width: 100%;
+}
+.content .con-hd .more {
+  font-size: 0.58667rem;
+  color: #999;
+}
+.get_xibao {
+  padding: 1.066667rem 0.64rem;
+}
+.swiper {
+  height: 11.467rem;
+  text-align: center;
+  --swiper-navigation-color: #2d2d2d;
+  /* 单独设置按钮颜色 */
+  --swiper-navigation-size: 0.667rem;
+  /* 设置按钮大小 */
+  /* Center slide text vertically */
+  flex-direction: column;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  transition: 300ms;
+  transform: scale(0.8);
+  opacity: 0.4;
+}
+.swiper a {
+  width: 9.013333rem;
+  height: 10.026667rem;
+}
+.swiper a img {
+  width: 100%;
+  height: 100%;
+}
+.swiper p {
+  width: 9.013333rem;
+  font-size: 0.666667rem;
+  margin-top: 0.64rem;
+  color: #333;
+}
+/*# sourceMappingURL=index.css.map */
