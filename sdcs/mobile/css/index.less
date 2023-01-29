@@ -113,53 +113,44 @@ a {
     }
 }
 
-.get_xibao {
+/*.get_xibao {
     padding: 1.066667rem 0.64rem;
-}
+}*/
 
 .swiper {
-    //width: 100%;
-    height: 11.467rem;
-    text-align: center;
+    width: 100%;
+    height: auto;
+    padding:90px 0;
+    margin-left: auto;
+    margin-right: auto;
 
     --swiper-navigation-color: #2d2d2d;/* 单独设置按钮颜色 */
     --swiper-navigation-size: 0.667rem;/* 设置按钮大小 */
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    // 竖向显示
-    flex-direction: column;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    transition: 300ms;
-    // 其余的兄弟是 0.8
-    transform: scale(0.8);
-    opacity: 0.4;
-    a {
-        width: 9.013333rem;
-        height: 10.026667rem;
-        img {
-            width: 100%;
-            height: 100%;
-        }
+
+    img {
+        width: 100%;
     }
-    p {
-        width: 9.013333rem;
-        font-size: 0.666667rem;
-        margin-top: 0.64rem;
-        color: #333;
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        height: 200px;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        transition-property:all;
     }
 }
+

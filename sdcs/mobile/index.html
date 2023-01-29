@@ -71,19 +71,31 @@
                     <a href="#">
                         <img src="./images/xibao1.jpg" alt="">
                     </a>
-                    <p>sdfsdaf</p>
                 </div>
                 <div class="swiper-slide">
                     <a href="#">
-                        <img src="./images/3.jpg" alt="">
+                        <img src="./images/xibao2.jpeg" alt="">
                     </a>
-                    <p>sdfsdaf</p>
                 </div>
                 <div class="swiper-slide">
                     <a href="#">
-                        <img src="./images/pic.png" alt="">
+                        <img src="./images/xibao3.jpeg" alt="">
                     </a>
-                    <p>sdfsdaf</p>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="./images/xibao4.jpeg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="./images/xibao5.jpeg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="./images/xibao6.jpeg" alt="">
+                    </a>
                 </div>
             </div>
             <!-- 如果需要分页器 -->
@@ -93,6 +105,7 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
 
+            <div class="swiper-pagination"></div>
             <!-- 如果需要滚动条 -->
             <!--        <div class="swiper-scrollbar"></div>-->
         </div>
@@ -106,27 +119,60 @@
 <script src="./js/flexible.js"></script>
 <script src="./js/swiper-bundle.min.js"></script>
 <script>
-    var mySwiper = new Swiper ('.swiper', {
-        autoplay: true,//可选选项，自动滑动
-        direction: 'horizontal', // 垂直切换选项
-        loop: true, // 循环模式选项
+    effect = 1
+    var swiper = new Swiper('.swiper', {
+        autoplay:true,
+        loop: true,
+        speed: 2500,
+        slidesPerView: 4,
+        spaceBetween: 3,
+        centeredSlides : true,
+        watchSlidesProgress : true,
+        on: {
+            setTranslate: function(){
+                slides = this.slides
+                for(i=0; i< slides.length; i++){
+                    slide = slides.eq(i)
+                    progress = slides[i].progress
+                    //slide.html(progress.toFixed(2)); 看清楚progress是怎么变化的
+                    slide.css({'opacity': '','background': ''});slide.transform('');//清除样式
 
-        // 如果需要分页器
-        pagination: {
-            el: '.swiper-pagination',
+                    if(effect == 1){
+                        slide.transform('scale('+(1 - Math.abs(progress)/8)+')');
+                    }else if(effect == 2){
+                        slide.css('opacity',(1-Math.abs(progress)/6));
+                        slide.transform('translate3d(0,'+ Math.abs(progress)*20+'px, 0)');
+                    }
+                    else if(effect == 3){
+                        slide.transform('rotate('+ progress*30+'deg)');
+                    }else if(effect == 4){
+                        slide.css('background','rgba('+ (255 - Math.abs(progress)*20) +','+ (127 + progress*32) +',' + Math.abs(progress)*64 + ')');
+                    }
+
+                }
+            },
+            setTransition: function(transition) {
+                for (var i = 0; i < this.slides.length; i++) {
+                    var slide = this.slides.eq(i)
+                    slide.transition(transition);
+                }
+            },
         },
-
-        // 如果需要前进后退按钮
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
-
-        // 如果需要滚动条
-        scrollbar: {
-            el: '.swiper-scrollbar',
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
         },
-    })
+    });
+
+    pe = document.getElementById('progressEffect');
+    pe.onchange = function(){
+        effect = this.value
+        swiper.update();
+    }
 </script>
 </body>
 </html>
