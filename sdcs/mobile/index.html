@@ -9,28 +9,78 @@
     <title>山东诚师</title>
 </head>
 <body>
+
+<!--
+模块安排
+    关于诚师
+        诚师教师的介绍，门面图片
+    课程中心
+        教师岗、行政岗、管理岗课程
+        辅导员课程
+        面试班
+        以上三套课程的课程表
+    教材展示
+        这些图片都有，可以使用网站上的图片就行
+    上岸展示
+        喜报展示
+        锦旗展示
+    培训现场
+        图片展示
+    联系我们
+        两个公众号
+        一个个人微信二维码
+-->
+
 <section class="wrap">
     <!--头部区域-->
     <header class="header">
         <span class="logo">
             <img src="./icons/logo.png" alt="">
         </span>
-        诚师教育</header>
+        诚师教育
+        <a href="#">
+            <span class="tel iconfont">&#xe817;</span>
+        </a>
+    </header>
+
+<!--    banner部分-->
+    <div class="banner">
+        <div class="swiper" id="swiper1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/banner/banner1.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/banner/banner2.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/banner/banner3.jpeg" alt="">
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
     <!--笔试班、面试班、协议班、招聘信息、公告提醒-->
     <!--导航栏-->
     <nav class="nav">
-        <a href="#" class="item">
+        <a href="shiting.html" class="item">
             <img src="./icons/icon1.png" alt="" />
-            <span>面试班</span>
+            <span>试听课</span>
         </a>
         <a href="#" class="item">
             <img src="./icons/icon2.png" alt="" />
             <span>笔试班</span>
         </a>
         <a href="#" class="item">
-            <img src="./icons/icon12.png" alt="" />
-            <span>笔面协议班</span>
+            <img src="./icons/icon1.png" alt="" />
+            <span>面试班</span>
         </a>
+        <!--<a href="#" class="item">
+            <img src="./icons/icon12.png" alt="" />
+            <span>辅导员面试</span>
+        </a>-->
         <a href="#" class="item">
             <img src="./icons/icon6.png" alt="" />
             <span>招聘信息</span>
@@ -39,10 +89,18 @@
             <img src="./icons/icon5.png" alt="" />
             <span>公告提醒</span>
         </a>
-        <!--<a href="#" class="item">
+        <a href="#" class="item">
             <img src="./icons/icon6.png" alt="" />
-            <span>薪资查询</span>
-        </a>-->
+            <span>备考技巧</span>
+        </a>
+        <a href="#" class="item">
+            <img src="./icons/icon5.png" alt="" />
+            <span>免费教材</span>
+        </a>
+        <a href="#" class="item">
+            <img src="./icons/icon5.png" alt="" />
+            <span>培训现场</span>
+        </a>
     </nav>
 
     <!--go模块-->
@@ -56,6 +114,63 @@
 
 <!--轮播图模块-->
 <section class="content">
+    <div class="con-hd gonggaoh2">
+        <h4>
+            <span class="icon">
+                <img src="./icons/shangan.png"/>
+            </span>
+            最新公告</h4>
+        <a href="#" class="more">更多>></a>
+    </div>
+    <div class="gonggao">
+        <a class="item" href="#">
+            <span class="diqu">山东</span><h3>济南职业技术学院2023年招聘专任教师</h3><span class="upload_time">2023-02-01</span>
+        </a>
+        <a class="item" href="#">
+            <span class="diqu">山东</span><h3>济南职业技术学院2023年招聘专任教师</h3><span class="upload_time">2023-02-01</span>
+        </a>
+        <a class="item" href="#">
+            <span class="diqu">山东</span><h3>济南职业技术学院2023年招聘专任教师</h3><span class="upload_time">2023-02-01</span>
+        </a>
+        <a class="item" href="#">
+            <span class="diqu">黑龙江</span><h3>济南职业技术学院2023年招聘专任教师</h3><span class="upload_time">2023-02-01</span>
+        </a>
+        <a class="item" href="#">
+            <span class="diqu">山东</span><h3>济南职业技术学院2023年招聘专任教师</h3><span class="upload_time">2023-02-01</span>
+        </a>
+    </div>
+</section>
+
+<!--介绍课程包含什么岗位培训，以及优势在哪里-->
+<section class="jieshao">
+<!--    培训岗位有哪些-->
+    <div class="gangwei">
+        <h4>高校四大岗位全包含，让你从容选择课程</h4>
+        <ul>
+            <li>
+                <img src="./images/gou2.png" alt="">
+                教学岗/教辅岗
+            </li>
+            <li>
+                <img src="./images/gou2.png" alt="">
+                辅导员
+            </li>
+            <li>
+                <img src="./images/gou2.png" alt="">
+
+                行政管理岗
+            </li>
+            <li>
+                <img src="./images/gou2.png" alt="">
+
+                科研岗
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!--上岸喜报的轮播图模块-->
+<section class="content">
     <div class="con-hd">
         <h4>
             <span class="icon">
@@ -65,7 +180,7 @@
         <a href="#" class="more">更多>></a>
     </div>
     <div class="get_xibao">
-        <div class="swiper">
+        <div class="swiper" id="swiper2">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <a href="#">
@@ -97,34 +212,187 @@
                         <img src="./images/xibao6.jpeg" alt="">
                     </a>
                 </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="./images/xibao7.jpeg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="./images/xibao8.jpeg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="./images/xibao9.jpeg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="./images/xibao10.jpeg" alt="">
+                    </a>
+                </div>
             </div>
             <!-- 如果需要分页器 -->
             <!--        <div class="swiper-pagination"></div>-->
 
             <!-- 如果需要导航按钮 -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+<!--            <div class="swiper-button-prev"></div>-->
+<!--            <div class="swiper-button-next"></div>-->
 
             <div class="swiper-pagination"></div>
             <!-- 如果需要滚动条 -->
             <!--        <div class="swiper-scrollbar"></div>-->
         </div>
+
+
     </div>
 </section>
 
+<!--介绍课程优势在哪里-->
+<section class="jieshao">
+    <!--    培训岗位有哪些-->
+    <div class="kecheng_leixing">
+        <h4>线上直播课/小班课</h4>
+        <span>根据高校岗位，开发最适合你的课程，提高上岸通过率</span>
+        <div class="fenlei">
+            <ul>
+                <li>
+                    <img src="./images/pr4-1_n.png" alt="">
+                    <p>线上直播课</p>
+                </li>
+                <li>
+                    <img src="./images/pr4-2_n.png" alt="">
+                    <p>小班课</p>
+                </li>
+                <li>
+                    <img src="./images/pr4-3_n.png" alt="">
+                    <p>一对一教学</p>
+                </li>
+                <li>
+                    <img src="./images/pr4-4_n.png" alt="">
+                    <p>vip定制教学</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
 
+<!--介绍课程优势在哪里-->
+<section class="jieshao">
+    <!--    培训岗位有哪些-->
+    <div class="youshi">
+        <h4>我们的优势</h4>
+        <ul>
+            <li>
+                <img src="./images/pr2-2_n.png" alt="">
+                <h5>优质的教学资源</h5>
+                <p>多样化的教学资源最前沿的高校信息全方位提升你的上岸率</p>
+            </li>
+            <li>
+                <img src="./images/pr2-2_n.png" alt="">
+                <h5>强大的师资力量</h5>
+                <p>各大高校在职教师亲自授课让你离上岸更进一步</p>
+            </li>
+            <li>
+                <img src="./images/pr2-2_n.png" alt="">
+                <h5>灵活的教学方式</h5>
+                <p>放弃传统的教学方式，采用多种教学形式满足你的多种需求</p>
+            </li>
+        </ul>
+    </div>
+</section>
 
+<!--课程特色-->
+<section class="content">
+    <div class="con-hd gonggaoh2">
+        <h4>
+            <span class="icon">
+                <img src="./icons/shangan.png"/>
+            </span>
+            课程特色</h4>
+    </div>
+    <div class="teses">
+        <div class="tubiao">
+            <img src="./icons/icon1.png" alt="">
+            <span class="miaoshu">科学研发</span>
+        </div>
+        <div class="tubiao">
+            <img src="./icons/icon1.png" alt="">
+            <span class="miaoshu">专注教学</span>
+        </div>
+        <div class="tubiao">
+            <img src="./icons/icon1.png" alt="">
+            <span class="miaoshu">线上+线下</span>
+        </div>
+        <div class="tubiao">
+            <img src="./icons/icon1.png" alt="">
+            <span class="miaoshu">全程督学</span>
+        </div>
+    </div>
 
+    <div class="tedian">
+        数十名高校教师团队共同研发课程，课程设置合理科学，贴合考情直击考点，总结技巧传授大招。
+    </div>
+</section>
+
+<section class="last last_content">
+    <div class="erweima">
+        <div class="lianxi">
+            <img src="./images/erweima/gongzhonghao1.jpeg" alt="">
+            <span>高校招聘信息公众号</span>
+        </div>
+        <div class="lianxi">
+            <img src="./images/erweima/gongzhonghao2.jpeg" alt="">
+            <span>诚师教育官方公众号</span>
+        </div>
+        <div class="lianxi">
+            <img src="./images/erweima/geren.jpeg" alt="">
+            <span>招生负责人联系方式</span>
+        </div>
+    </div>
+    <div class="wangzhan_xinxi">CopyRight ©2023 All Right Reserved</div>
+    <div class="wangzhan_xinxi">山东诚师教育信息咨询服务有限公司</div>
+    <div class="wangzhan_xinxi">备案号：<a href="https://beian.miit.gov.cn/#/Integrated/index">鲁ICP备2021023865号-1</a></div>
+</section>
+
+<footer class="footer">
+    <a href="#" class="item">
+        <img src="./icons/home.png" alt="" />
+        <p>首页</p>
+    </a>
+    <a href="#" class="item">
+        <img src="./icons/ms.png" alt="" />
+        <p>我要笔试</p>
+    </a>
+    <a href="#" class="item">
+        <img src="./icons/net.png" alt="" />
+        <p>我要面试</p>
+    </a>
+    <a href="#" class="item">
+        <img src="./icons/user.png" alt="" />
+        <p>招聘信息</p>
+    </a>
+</footer>
 
 <script src="./js/flexible.js"></script>
 <script src="./js/swiper-bundle.min.js"></script>
 <script>
-    effect = 1
-    var swiper = new Swiper('.swiper', {
+    var swiper1 = new Swiper("#swiper1", {
+        autoplay:true,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+        },
+    });
+
+    effect = 1;
+    var swiper = new Swiper('#swiper2', {
         autoplay:true,
         loop: true,
         speed: 2500,
-        slidesPerView: 4,
+        slidesPerView: 3,
         spaceBetween: 3,
         centeredSlides : true,
         watchSlidesProgress : true,
