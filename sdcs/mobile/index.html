@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/index.css">
+    <title>山东诚师</title>
+</head>
+<body>
+<section class="wrap">
+    <!--头部区域-->
+    <header class="header">
+        <span class="logo">
+            <img src="./icons/logo.png" alt="">
+        </span>
+        诚师教育</header>
+    <!--笔试班、面试班、协议班、招聘信息、公告提醒-->
+    <!--导航栏-->
+    <nav class="nav">
+        <a href="#" class="item">
+            <img src="./icons/icon1.png" alt="" />
+            <span>面试班</span>
+        </a>
+        <a href="#" class="item">
+            <img src="./icons/icon2.png" alt="" />
+            <span>笔试班</span>
+        </a>
+        <a href="#" class="item">
+            <img src="./icons/icon12.png" alt="" />
+            <span>笔面协议班</span>
+        </a>
+        <a href="#" class="item">
+            <img src="./icons/icon6.png" alt="" />
+            <span>招聘信息</span>
+        </a>
+        <a href="#" class="item">
+            <img src="./icons/icon5.png" alt="" />
+            <span>公告提醒</span>
+        </a>
+        <!--<a href="#" class="item">
+            <img src="./icons/icon6.png" alt="" />
+            <span>薪资查询</span>
+        </a>-->
+    </nav>
+
+    <!--go模块-->
+    <section class="go">
+        <a href="#">
+            <img src="./images/go.png" alt="" />
+        </a>
+    </section>
+
+</section>
+
+<!--轮播图模块-->
+<section class="content">
+    <div class="con-hd">
+        <h4>
+            <span class="icon">
+                <img src="./icons/shangan.png"/>
+            </span>
+            上岸喜报</h4>
+        <a href="#" class="more">更多>></a>
+    </div>
+    <div class="get_xibao">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="./images/xibao1.jpg" alt="">
+                    </a>
+                    <p>sdfsdaf</p>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="./images/3.jpg" alt="">
+                    </a>
+                    <p>sdfsdaf</p>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="./images/pic.png" alt="">
+                    </a>
+                    <p>sdfsdaf</p>
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <!--        <div class="swiper-pagination"></div>-->
+
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- 如果需要滚动条 -->
+            <!--        <div class="swiper-scrollbar"></div>-->
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<script src="./js/flexible.js"></script>
+<script src="./js/swiper-bundle.min.js"></script>
+<script>
+    var mySwiper = new Swiper ('.swiper', {
+        autoplay: true,//可选选项，自动滑动
+        direction: 'horizontal', // 垂直切换选项
+        loop: true, // 循环模式选项
+
+        // 如果需要分页器
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // 如果需要滚动条
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    })
+</script>
+</body>
+</html>

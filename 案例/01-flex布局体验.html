@@ -22,14 +22,70 @@
             margin-right: 5px;
             flex: 1;
         }
+
+        div {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+
+            float: left;
+            border: 1px solid red;
+            margin-left: -1px;
+
+
+        }
+
+        ul li:hover {
+            z-index: 1;
+            border: 1px solid blue;
+        }
+
+        .pic {
+            float: left;
+            margin-right: 5px;
+        }
+        
+        div {
+            text-align: center;
+        }
+        a {
+            display: inline-block;
+            width: 36px;
+            height: 36px;
+            border: 1px solid #666;
+            text-align: center;
+            line-height: 36px;
+        }
     </style>
 </head>
-
+<!---->
 <body>
     <div>
         <span>1</span>
         <span>2</span>
         <span>3</span>
+    </div>
+
+    <div>
+        <div class="pic">
+            <img src="#" alt="">
+        </div>
+        <p>这是文字内容</p>
+    </div>
+
+    <div>
+        <a href="">上一页</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href="">4</a>
+        <a href="">...</a>
+        <a href="">下一页</a>
+        <a href=""><input type="text"></a>
+        <a href="">确定</a>
     </div>
 </body>
 

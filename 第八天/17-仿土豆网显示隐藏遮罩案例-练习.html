@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .tudou {
+            position: relative;
+            width: 448px;
+            margin:100px auto;
+        }
+
+        .tudou img {
+            width: 448px;
+        }
+
+        .mask {
+            position: absolute;
+            display: none;
+            width: 448px;
+            height: 252px;
+            background:rgba(0,0,0,0.3) url("images/arr.png") no-repeat center center;
+            left: 0;
+            top: 0;
+        }
+
+        .tudou:hover .mask {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="tudou">
+    <img src="images/tudou.jpg" alt="">
+    <div class="mask"></div>
+</div>
+</body>
+</html>
